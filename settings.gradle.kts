@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LebentechSenderSDK"
 include(":app")
+include(":SenderSDK")
