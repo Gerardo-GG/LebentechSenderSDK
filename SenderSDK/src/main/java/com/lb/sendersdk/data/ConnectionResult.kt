@@ -1,6 +1,6 @@
 package com.lb.sendersdk.data
 
-import com.lb.sendersdk.modules.BluetoothMessage
+import com.lb.sendersdk.models.BluetoothMessage
 
 sealed interface ConnectionResult {
     data object ConnectionEstablished: ConnectionResult

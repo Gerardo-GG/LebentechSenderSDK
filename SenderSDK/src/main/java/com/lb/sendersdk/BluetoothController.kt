@@ -17,8 +17,8 @@ import com.lb.sendersdk.data.receivers.BluetoothStateReceiver
 import com.lb.sendersdk.data.receivers.FoundDeviceReceiver
 import com.lb.sendersdk.extensions.toApplicationDevice
 import com.lb.sendersdk.extensions.toByteArray
-import com.lb.sendersdk.modules.ApplicationDevice
-import com.lb.sendersdk.modules.BluetoothMessage
+import com.lb.sendersdk.models.ApplicationDevice
+import com.lb.sendersdk.models.BluetoothMessage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

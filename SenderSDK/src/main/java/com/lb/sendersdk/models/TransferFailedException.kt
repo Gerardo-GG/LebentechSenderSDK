@@ -1,4 +1,4 @@
-package com.lb.sendersdk.modules
+package com.lb.sendersdk.models
 
 import java.io.IOException
 

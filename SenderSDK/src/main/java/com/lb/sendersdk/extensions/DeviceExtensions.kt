@@ -2,8 +2,8 @@ package com.lb.sendersdk.extensions
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
-import com.lb.sendersdk.modules.ApplicationDevice
-import com.lb.sendersdk.modules.BluetoothMessage
+import com.lb.sendersdk.models.ApplicationDevice
+import com.lb.sendersdk.models.BluetoothMessage
 
 fun String.toBluetoothMessage(): BluetoothMessage {
     val messages = this.split("#")

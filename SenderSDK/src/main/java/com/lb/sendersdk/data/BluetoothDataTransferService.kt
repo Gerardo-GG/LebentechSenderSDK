@@ -2,8 +2,8 @@ package com.lb.sendersdk.data
 
 import android.bluetooth.BluetoothSocket
 import com.lb.sendersdk.extensions.toBluetoothMessage
-import com.lb.sendersdk.modules.BluetoothMessage
-import com.lb.sendersdk.modules.TransferFailedException
+import com.lb.sendersdk.models.BluetoothMessage
+import com.lb.sendersdk.models.TransferFailedException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

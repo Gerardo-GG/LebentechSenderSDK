@@ -2,6 +2,7 @@ package com.lb.sendersdk.di
 
 import android.content.Context
 import com.lb.sendersdk.BluetoothController
+import com.lb.sendersdk.BluetoothService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,6 +18,12 @@ object BluetoothModule {
     @Singleton
     fun provideBluetoothController(@ApplicationContext context: Context): BluetoothController {
         return BluetoothController(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideBluetoothService(bluetoothController: BluetoothController, @ApplicationContext context: Context): BluetoothService {
+        return BluetoothService(bluetoothController, context)
     }
 
 }
