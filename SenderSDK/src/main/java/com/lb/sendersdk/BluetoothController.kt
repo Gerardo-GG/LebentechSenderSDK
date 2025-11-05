@@ -37,10 +37,9 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.io.IOException
 import java.util.UUID
-import javax.inject.Inject
 
 @SuppressLint("MissingPermission")
-class BluetoothController @Inject constructor(
+class BluetoothController (
     private val context: Context
 ) {
 

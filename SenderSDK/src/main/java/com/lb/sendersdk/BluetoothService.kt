@@ -2,12 +2,10 @@ package com.lb.sendersdk
 
 import android.content.Context
 import android.util.Log
-import android.widget.Toast
 import com.lb.sendersdk.data.ConnectionResult
 import com.lb.sendersdk.models.ApplicationDevice
 import com.lb.sendersdk.models.BluetoothMessage
 import com.lb.sendersdk.models.BluetoothUiState
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -21,11 +19,10 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-class BluetoothService @Inject constructor(
-    private val bluetoothController: BluetoothController,
-    @ApplicationContext private val context: Context
+class BluetoothService (
+    private val context: Context,
+    private val bluetoothController: BluetoothController
 ) {
 
     private val serviceScope = CoroutineScope(Dispatchers.IO)
